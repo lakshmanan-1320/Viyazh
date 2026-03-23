@@ -1,0 +1,83 @@
+/* Sidebar Menu Styling */
+.menu-item {
+  color: #000;
+  transition: 0.3s;
+  border-radius: 8px !important;
+  margin: 4px 10px !important;
+  font-family: Inter;
+font-weight: 500;
+font-style: Medium;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0%;
+
+}
+
+.menu-item:hover {
+  background-color: #eef2ff;
+  color: #7158E2;
+  width:100%;
+}
+.menu-item:hover svg{
+  color: #7158E2;
+}
+.menu-item.active {
+  background: var(--bg);
+  color: #fff;
+  width:100%;
+}
+.menu-item.active svg{
+  color: #fff;
+}
+/* Icon style */
+.menu-icon {
+  font-size: 25px;
+  color: inherit; 
+}
+
+/* Text Style */
+.menu-text span {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 500;
+  color: inherit;
+}
+
+/* Logo Styling */
+.sidebar-logo {
+  width: 180px;
+  margin-left: 10px;
+}
+
+.sidebar-mini-logo {
+  width: 40px;
+}
+
+/* Menu Container */
+.sidebar-menu {
+  padding-top: 12px;
+}
+
+
+.menu-item.collapsed {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item.active-collapsed {
+  background: none !important;
+}
+
+.menu-item.active-collapsed .menu-icon svg {
+  color: #7158E2 !important;
+}
+
+.sidebar-menu {
+  overflow-y: auto;
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE/Edge */
+}
+
+.sidebar-menu::-webkit-scrollbar {
+  display: none;       
+}

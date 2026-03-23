@@ -1,0 +1,95 @@
+.difficulty_header{
+    padding:0px 40px;
+}
+.user_Body{
+    background-color: #fff;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    padding:34px 0px 80px 0px;
+
+}
+.diff_header{
+    font-family: Inter !important;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    color:#323232 !important;
+
+}
+.diff_header_grp{
+    align-items: center;
+    gap:21px;
+}
+.add_dii_btn{
+    font-size: 16px !important;
+    width:224px !important;
+    height:48px !important;
+    gap:5px;
+    
+}
+.diff_level_modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 839px;
+    /* height:478px; */
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background-color: #FFFFFF;   
+    padding-bottom:20px;
+   
+
+}
+.difficulty-table{
+    display: flex;
+    align-items: center;
+    
+}
+.diff_heading{
+    font-family: Inter !important;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    color:#3B3B3B !important;
+    padding:28px 34px !important;
+    border-bottom: 1px solid #0000003D;
+}
+.diff_level_body{
+    padding:28px 34px !important;
+
+}
+.diff_level_form{
+    display: flex !important;
+    flex-direction: column !important;
+}
+.diff_label{
+    font-family: Inter !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    color:#000000A8 !important;
+    display: block ! important;
+    margin-bottom:6px ! important;
+}
+.save_btn_diff{
+    width: 149px ! important;
+    height: 44px ! important;
+    background:var(--bg) ;
+    color:#fff ! important;
+    font-family: Inter ! important;
+    border-radius: 12px ! important;
+    font-size: 22px ! important;
+    font-weight: 600 ! important;
+    text-transform: inherit ! important;
+}
+.cancel_btn_diff{
+    background: #fff ! important;
+    border: 1px solid #0000003D ! important;
+    color:#3B3B3B ! important;
+}
+.modal_save_btn{
+    background:var(--bg) ! important;
+    color:#fff ! important;
+    font-weight: 600 ! important;
+    border:#00C7A9 ! important; 
+}
+.modal_cancel_btn{
+
+}

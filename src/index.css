@@ -1,0 +1,102 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'inter', sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+  padding: 0;
+  margin: 0;
+}
+
+p{
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --bg:linear-gradient(271.38deg, #A31DE5 1.17%, #7158E2 70.13%);
+  --bodyBg :#F8FAFD;
+;
+}
+
+
+
+/* Style for the switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 88px;
+  height: 44px;
+  border: 1px solid #0000003D;
+ 
+  border-radius: 34px; /* Rounded corners */
+  padding: 2px; /* Padding inside the slider */
+  transition: 0.4s;
+  box-sizing: border-box; /* Ensure padding doesn't affect size */
+}
+
+/* Hide the default checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Style for the slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white; /* Background remains white */
+  transition: 0.4s;
+  border-radius: 34px;
+  box-sizing: border-box; /* Ensure padding doesn't affect size */
+}
+
+/* Create the circle (thumb) inside the slider */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 35px;
+  width: 36px;
+  border-radius: 50%;
+  left: 4px; /* Space between the thumb and left edge */
+  /* top: */
+  bottom: 4px; 
+  background-color: #E5E5E5; /* Default grey color for the thumb */
+ 
+  transition: 0.4s;
+}
+
+/* When the checkbox is checked, update the thumb color and position */
+input:checked + .slider {
+  background-color: white; /* Keep background white */
+  border-color: #00C7A9; /* Add a green border to the slider */
+}
+
+input:checked + .slider:before {
+  transform: translateX(40px); /* Move the thumb to the right */
+  background:var(--bg); /* Change thumb to green */
+  border-color: #00C7A9; /* Change border of the thumb to green */
+}
+
+/* Additional active state styles */
+input:checked + .slider {
+  background-color: white; /* Ensure background is still white when checked */
+}
